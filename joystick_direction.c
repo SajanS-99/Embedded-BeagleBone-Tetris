@@ -2,7 +2,6 @@
 #include "joystick_read.h"
 #include <stdio.h>
 
-// reused for project from assignment 2
 
 //assumes will be using pin 2/3 for X/Y respectively, but can easily be changed later
 

@@ -5,7 +5,6 @@ Header file for some functions relating to time.
 Helps converts the raw nanosecond samples into ms for the output terminal and led
 As well as functions for getting current time, and sleeping
 
-Getting current time and sleeping functions provided by prof
 
 
 */

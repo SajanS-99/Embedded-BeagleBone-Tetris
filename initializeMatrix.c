@@ -11,7 +11,6 @@
 #define I2CDRV_LINUX_BUS1 "/dev/i2c-1"
 #define I2CDRV_LINUX_BUS2 "/dev/i2c-2"
 
-// code taken from example given by instructor
 
 int initI2cBus(char* bus, int address){
 
@@ -62,7 +61,7 @@ int initI2cBus2(char* bus, int address){
 }
 
 
-// code given to by prof, writes to matrix by sending array of 17 char
+//writes to matrix by sending array of 17 char
 void writeI2cReg(int i2cFileDesc, unsigned char regAddr, unsigned char value[]) {
    
     unsigned char buff[17];
@@ -77,7 +76,7 @@ void writeI2cReg(int i2cFileDesc, unsigned char regAddr, unsigned char value[]) 
         exit(1);
     }
 }
-// code given by prof, reads the current state of matrix
+//reads the current state of matrix
 unsigned char readI2cReg(int i2cFileDesc, unsigned char regAddr) {
 // To read a register, must first write the address
         int res = write(i2cFileDesc, &regAddr, sizeof(regAddr));

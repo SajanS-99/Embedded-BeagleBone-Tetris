@@ -3,9 +3,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-// code from example, given by instructor. Not claimed to be own code
-// code for file opening and reading/returning given by instructor
-// also reused from assignment 2 for project
+
 #define A2D_FILE_VOLTAGE0  "/sys/bus/iio/devices/iio:device0/in_voltage0_raw"
 
 int readJoyStickX(int Num){

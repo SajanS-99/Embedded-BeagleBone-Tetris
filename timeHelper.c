@@ -3,9 +3,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-//file reused for project from assignmet 2
 
-// get time, provided by prof
+// get time
 long long getTimeInMs(void){
     struct timespec spec;
     clock_gettime(CLOCK_REALTIME, &spec);
@@ -23,7 +22,7 @@ long long getTimeInNs(void){
     nanoseconds = seconds * 1000000000 + nanoseconds;
     return nanoseconds;
 } 
-// sleep, given by prof
+// sleep
 void sleepForMs(long long delayInMs)
 {
     const long long NS_PER_MS = 1000 * 1000;
